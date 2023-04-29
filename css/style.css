@@ -1,0 +1,444 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    text-decoration: none;
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+}
+  /* Top navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #352f31;
+    align-items: center;
+    margin: 0;
+    color: #e5b273; 
+}
+
+nav .logo_name{
+    font-size: 1.5rem;
+    padding: 0 3vw;
+    margin: 0.5rem;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+    cursor: crosshair;
+}
+
+nav .logo_name:hover{
+    color:#352f31;
+    background-color: #e5b273;
+    border-radius: 1rem;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #e5b273;
+    padding: 0.4rem;
+    margin: 1rem;
+    display: block;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar-links li a:hover{
+    background-color: #e5b273;
+    color:#352f31;
+    border-radius: 1rem;
+}
+#check{
+    display:none;
+    
+}
+.checkbtn{
+    display:none;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0.8rem;
+    right: 2rem;
+    cursor: pointer;
+}
+/* Header section */
+.title{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+    background-image: url("/img/moon_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    justify-content:center;
+    color: #FFFFE3;
+}
+h1{
+    margin: 0;
+    font-size: 3.5rem;
+    padding-left: 2vw;
+}
+.title p{
+    font-size: 1.2rem;
+    padding-left: 2vw;
+
+}
+
+.title div{
+    display: block;
+    margin-left: 30px;
+    height: 60px;
+    padding-top: 10px;
+    
+}
+
+.title a{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px 10px;
+    color: #f6fff8;
+    border: solid;
+    transition: ease-in-out 0.2s;
+}
+
+.title a:hover{
+    font-size: 1.6rem;
+    width: 210px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vw;
+    background-color: #352f31;
+    color: #e5b273; 
+}
+
+footer h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer a{
+    color: #e5b273;
+    font-size: 1.2rem;
+}
+
+footer div{
+    flex:1;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.fa{
+    padding: 8px;
+    font-size: 1.2rem !important;
+}
+
+
+/* About Page Styles */
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+body{
+    background-image: url("/img/moon_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.about{
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+
+
+.about-me{
+    display:flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    background-color: rgba(91.76%, 82.35%, 67.45%, 0.9) ;
+    border-radius: 50px;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.about-me img{
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.about section{
+   
+    background-color: rgba(91.76%, 82.35%, 67.45%, 0.9);
+    padding: 20px;
+    margin-top: 3vw;
+    border-radius: 50px;
+}
+
+.skills>ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.skills ul li ul {
+    list-style: none;
+    text-align: center;
+    padding:0;
+}
+
+
+.skills ul li ul img{
+    width: 25px;
+    margin-right: 8px;
+    
+}
+
+.skills ul li ul li{
+    display: flex;
+    padding: 5px;
+}
+
+.experiences-list {
+    list-style: none;
+    
+}
+
+.experiences-list>li{
+    padding: 50px 0;
+    align-items: center;
+}
+
+.experiences-list>li{
+    display: flex;
+}
+
+.experiences-list h3{
+    font-size: 1.1rem;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.experiences-list h4{
+    font-size: 0.9rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.experience-details{
+    padding-left: 18px;
+}
+
+.experience-details li{
+    font-size: 1rem;
+    padding:0;
+}
+
+.experiences-list img{
+    height: 140px;
+    width: 140px;
+    margin-right: 34px;
+    border-radius: 20px;
+}
+
+#projects-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#projects-link a{
+    color: white;
+    background: #352f31;
+    padding: 10px;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+#projects-link a:hover{
+    color:#352f31;
+    background: whitesmoke;
+}
+
+/* "Projects" styling */
+
+#project-title-box{
+    color:black;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:32px;
+    padding: 18px;
+    background-color: #e5b273;
+    width: 270px;
+    top: 80px;
+    position: relative;
+    
+}
+
+#project-title-box:after {
+    content: "";
+    position: absolute;
+    border: 37px solid transparent;
+    border-top-color: #e5b273;
+    border-left-color: #e5b273;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    
+  }
+
+#long-projects{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    background: rgba(229, 178, 115, 0.96);
+    
+    margin-top: 200px;
+    border-radius: 50px;
+}
+
+.project{
+    padding: 20px;
+    font-size: 1.1rem;
+}
+.project h2{
+    text-align: center;
+}
+.project p{
+    font-size: 1.17rem;
+}
+
+.project-images{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr)
+    
+}
+
+.project-images img{
+    height: auto;
+    width: 350px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Special project tags */
+
+.tag-section{
+    display:flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 30px 0;
+}
+
+.tag{
+    font-weight: 900;
+    padding: 7px;
+}
+
+.solidworks{
+    background: lightcoral;
+    padding: 7px;
+    border-radius: 14px;
+    border: solid;
+}
+
+.autocad{
+    background: lightblue;
+    padding: 7px;
+    border-radius: 14px;
+    border: solid;
+
+}
+
+.manufacturing{
+    background: lightgreen;
+    padding: 7px;
+    border-radius: 14px;
+    border: solid;
+
+}
+
+.lasercutting{
+    background: lightgray;
+    padding: 7px;
+    border-radius: 14px;
+    border: solid;
+
+}
+
+.printing3d{
+    background: orange;
+    padding: 7px;
+    border-radius: 14px;
+    border: solid;
+
+}
+
+/* Responsive */
+
+@media screen and (max-width: 840px){
+    .navbar-links{
+        position: relative;
+        display:none;
+        width: 100%;
+        transition: ease-in-out 0.2s;
+
+    }
+    .checkbtn{
+        display:block;
+        transition: ease-in-out 0.2s;
+    }
+    .checkbtn:hover{
+        padding: 0.1rem 0.2rem;
+        color:#352f31;
+        background-color: #e5b273;
+        border-radius: 3px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        background: #352f31;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        margin: 0.2rem 0;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
