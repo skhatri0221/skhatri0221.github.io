@@ -347,13 +347,23 @@ body{
     
 }
 
+.project-images>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-images>div>p{
+    margin: 5px auto;
+}
+
 .project-images img{
     height: auto;
     width: 24vw;
     align-self: center;
     justify-self: center;
 }
-
 
 /* Special project tags */
 
@@ -571,11 +581,40 @@ body{
         margin-top: 4vw;
     }
 
+    footer{
+        display: block;
+    }
+
     .contact-section{
-        padding: 3px;
+        padding: 1px;
     }
     .contact-section div{
         font-size: 0.4rem;
+    }
+
+
+    /* Skills section  */
+    
+    .skills ul li ul li{
+        display: flex;
+        padding: 5px;
+        font-size: 0.95rem;
+        justify-content: center;
+    }
+
+    .project-images>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-images img{
+        margin-bottom: 0;
+    }
+
+    .project-images>div>p{
+        margin: 8px auto;
     }
 
 }
