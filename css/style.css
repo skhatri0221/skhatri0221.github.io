@@ -122,15 +122,17 @@ h1{
 footer{
     display: flex;
     flex-wrap: wrap;
-    height: 15vw;
+    /* height: 15vw; */
     background-color: #352f31;
     color: #e5b273; 
+    padding: 40px;
 }
 
 footer h3{
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    margin-top: 0;
 }
 
 footer a{
@@ -347,7 +349,7 @@ body{
 
 .project-images img{
     height: auto;
-    width: 350px;
+    width: 24vw;
     align-self: center;
     justify-self: center;
 }
@@ -357,14 +359,20 @@ body{
 
 .tag-section{
     display:flex;
-    justify-content: space-around;
-    width: 60%;
+    width: 90%;
     margin: 30px 0;
+}
+
+.tag-section>div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .tag{
     font-weight: 900;
     padding: 7px;
+    font-size: 1.4rem;
 }
 
 .solidworks{
@@ -372,6 +380,7 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
 }
 
 .autocad{
@@ -379,6 +388,7 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
 
 }
 
@@ -387,6 +397,7 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
 
 }
 
@@ -395,6 +406,7 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
 
 }
 
@@ -403,6 +415,7 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
 
 }
 
@@ -411,6 +424,8 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
+
 }
 
 .ml{
@@ -418,6 +433,8 @@ body{
     padding: 7px;
     border-radius: 14px;
     border: solid;
+    margin: 10px 10px;
+
 }
 
 /* Responsive */
@@ -458,4 +475,107 @@ body{
     .navbar-links.active {
         display: flex;
     }
+
+    .checkbtn{
+        top:0.5rem;
+    }
+
+    /* About section */
+    
+
+    .about{
+        margin: 0 auto;
+        max-width: 93%;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    
+    .about-me img{
+        width: 50vw;
+    }
+    
+    .experiences-list>li{
+        padding: 25px 0;
+    }
+    
+    .experiences-list>li{
+        flex-direction: column;
+    }
+    
+    .experiences-list h3{
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 5px 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .experiences-list h4{
+        font-size: 1.15rem;
+        margin: 0;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .experience-details{
+        margin-top: 10px;
+
+    }
+    
+    .experience-details li{
+        font-size: 1.2rem;
+        padding:0;
+    }
+
+    /* "Projects" styling */
+
+    #project-title-box{
+        padding: 17px;
+    }
+
+    #project-title-box:after {
+        border: 36px solid transparent;
+        border-top-color: #e5b273;
+        border-left-color: #e5b273;
+        left: 99.8%;
+        top: 0;
+        width: 0;
+        height: 0;
+        
+    }
+
+    #long-projects{
+        margin-top: 150px;
+    }
+
+    .project p{
+        font-size: 1.2rem;
+    }
+
+    .project-images{
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .project-images img{
+        width: 270px;
+
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    footer h3{
+        font-size: 1.1rem;
+        margin-top: 4vw;
+    }
+
+    .contact-section{
+        padding: 3px;
+    }
+    .contact-section div{
+        font-size: 0.4rem;
+    }
+
 }
