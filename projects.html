@@ -20,6 +20,8 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/cad.html">CAD</a></li>
+
                 <li><a href="./index.html#contact-section">Contact</a></li>
             </ul>
         </div>
@@ -28,7 +30,7 @@
 
         <p id="project-title-box">projects</p>
 
-        <section id="long-projects">
+        <section class="long-projects">
             <!-- ME-100 Toy Design Project - Add Tags - 3 pictures minimum  -->
             
             <div class="project">                
@@ -36,7 +38,13 @@
                 <div class="tag-section"><span class="tag">Tags:</span>
                     <div><span class="solidworks">SolidWorks</span><span class="autocad">AutoCAD</span><span class="printing3d">3D-Printing</span><span class="lasercutting">Laser Cutting</span><span class="manufacturing">Manufacturing</span></div>
                 </div>
-                <p>The following project was completed as a requirement to the ME-100 course during my 1A term. The Cannon-Ball Z is an interactive toy intended for youths aged 8-12 years old. The design uses the principles of gear ratios and mechanisms along with electronic circuits that is programmed using Arduino to deliever the best entertainment. To play, the player flips switch which intiaties a motor within the toy. The electric motor rotates the internal gears that are connected in mesh to spin the shafts to which the obstacles (illustrated as red slots) are connected to. These gears are also connected to a rack and pinion gear system located at the top of the toy which allows the hoop to translate laterally. The Arduino is used to periodically reverse the rotation of the motor to allow the hoop to osicillate back and forth. Once the hoop is moving, the player tries to launch a small spherical projectile using a spring launcher and score the projectile through the hoop, which earns them points. </p>
+                
+                <ul>
+                    <li>Designed an interactive toy for youths aged 8-12 using SolidWorks, AUTOCad, 3-printing, and machine shop tools</li>
+                    <li>Used various gear ratios and mesh, along with an integrated Arduino to motorize and automate the toy</li>
+                    <li>Conducted studies on material properties, and used FEA simulations in SolidWorks to optimize the design</li>
+                </ul>
+                
                 <div class="project-images">
                     <div><img src="./img/cannonballz-cad.webp" alt=""><p>Initial CAD model</p></div>
                     <div><img src="./img/arduino-setup.webp" alt=""><p>The Arduino and and Hardware setup</p></div>
@@ -48,9 +56,33 @@
             <div class="project">
                 <h2>Sarcasm Detector</h2>
                 <div class="tag-section"><span class="tag">Tags:</span><span class="python">Python</span><span class="ml">Machine Learning</span></div>
-                <p>The Sarcasm Detector project is a natural language processing model that predicts whether a particular headline from the news is sarcastic (1) or not (0). The input data is a string of words and their expected output (sarcastic or not). Before feeding the input data into the neural network model, the input data is tokenized using the Tensorflow tokenizer class. The tokenizer class maps each word to a unique integer. More broadly, a string of words is converted into a vector where each integer represents a specific word. The input data is fed through one hidden layer with 24 units. The output of the model is a numerical value between 0 to 1. Value closer to 0 indicates the input data is not sarcastic and value closer to 1 indicates that the input data is sarcastic. Click here to view the GitHub repository: <a href="https://github.com/skhatri0221/NLP-Sarcasm_Detector">Sarcasm Detector</a></p>
+                <ul>
+                    <li>Implemented natural language processing concepts to develop a model that predicts if a headline is sarcastic or not</li>
+                    <li>Used Tensorflow to tokenize each text data and develop a neural network model with a maximum validation accuracy of 86%</li>
+                    <li>Organized and implemented training and testing data using Numpy and Pandas library</li>
+                </ul>
+                <a href="https://github.com/skhatri0221/NLP-Sarcasm_Detector" target="_blank">GitHub Repo.</a>
+                <div class="project-images-flex">
+                    <img src="img/sarcastic_img.jpg" alt="">
+                </div>
 
             </div>
+
+            <div class="project">
+                <h2>Gas Price Finder</h2>
+                <div class="tag-section"><span class="tag">Tags:</span><span class="python">Python</span></div>
+                <ul>
+                    <li>Used Tkinter module in Python to create a user interface that displays web-scrapped data on cheapest gas prices in a city</li>
+                    <li>Web scrapped gas prices data using Beautiful Soup and Requests libraries for real time prices</li>
+                </ul>
+                <a href="https://github.com/skhatri0221/NLP-Sarcasm_Detector" target="_blank">GitHub Repo.</a>
+                <div class="project-images-flex">
+                    <img src="img/gasPrices/img-1.jpg" alt="">
+                    <img src="img/gasPrices/img-2.jpg" alt="">
+                </div>
+
+            </div>
+
 
         </section>
 
