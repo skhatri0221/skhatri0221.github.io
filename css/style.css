@@ -367,6 +367,11 @@ body{
     justify-self: center;
 }
 
+.project-images-flex img{
+    width: 450px;
+    margin: 15px auto;
+}
+
 /* Special project tags */
 
 .tag-section{
