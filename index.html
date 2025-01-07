@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Smile Khatri">
+    <title>Smile's Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="home-body">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Hamburger Icon (Visible on small screens) -->
+            <div class="hamburger" id="hamburger-icon">
+                &#9776;
+            </div>
+            <ul id="navbar-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <section class="intro-container">
+            <img src="./img/graduation_pic_solo.jpg">
+            <div class="contact-info">
+                <h1>Hi there, I am Smile</h1>
+                <ul>
+                    <li><p>
+                        I am an undergrad studying mechanical engineering at the University of Waterloo. 
+                        I recently completed 2nd year and I am currently completing an internship at Atmose. 
+                        I am driven by tackling engineering problems by using first principles and simulations to guide product design.
+                        If you are interested in my work, feel free to reach out to me!
+                    </p></li>
+
+                    <li>Full name: Smile Khatri</li>
+                    <li>Email: <a href="mailto:skhatri@uwaterloo.ca">skhatri@uwaterloo.ca</a>
+                    </li>
+                    <li>Linkedin: <a href="https://www.linkedin.com/in/smilekhatri/" target="_blank">linkedin.com/in/smilekhatri</a>
+                    </li>
+
+                </ul>
+            </div>
+            
+        </section>
+    </header>
+
+    <!-- JavaScript to toggle the hamburger menu -->
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        hamburgerIcon.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
