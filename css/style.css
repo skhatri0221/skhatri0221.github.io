@@ -1,0 +1,188 @@
+/* Global Styles */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+}
+
+.home-body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/plane.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    margin: 0;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgb(9, 17, 32); 
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* Center the navbar content */
+    align-items: center; /* Align vertically */
+    max-width: 1200px; /* Optional: Limit the maximum width of the navbar content */
+    margin: 0 auto; /* Ensure the container is centered */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #f0a500;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* Header */
+header {
+    color: #000000;
+
+    padding: 80px 0;
+    position: relative; /* Ensure stacking context */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 175%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.intro-container{
+    display:flex;
+    width:65%;
+    
+}
+
+.intro-container img {
+    width:40%;
+    height: auto;
+    margin: 0 auto; /* Centers the image */
+    display: block; /* Removes inline spacing */
+    max-width: 100%; /* Ensures image doesn't overflow its container */
+}
+
+.contact-info {
+    background-color:rgba(255, 255, 255, 0.8);   
+    width: 100%;
+    text-align: center;
+} 
+
+.contact-info ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    
+}
+
+.contact-info ul li {
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .navbar .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 0 20px; /* Optional: Add padding for alignment */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color:  rgb(9, 17, 32);
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header {
+        padding: 50px 0; /* Adjust padding to prevent content being cut off */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Slightly smaller font size for better fit */
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .intro-container{
+        width:80%;
+        flex-direction: column;
+        
+    }
+
+    .intro-container img {
+        width: 100%;
+    }
+
+}
