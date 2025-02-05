@@ -26,6 +26,19 @@
     <section class="projects-container">
     <!-- Projects container -->
     <div class="projects-grid">
+
+        <div class="project-item">
+            <button class="openModalBtn" data-target="eclipse"> <!-- data targets ID-->
+                <img src="./img/eclipse_render.png">
+                <p class="project-title">Eclipse</p>
+                <div class="tags">
+                    <span class="tag">CAD</span>
+                    <span class="tag">CFD</span>
+                    <span class="tag">Project Management</span>
+                    <span class="tag">Machining</span>
+                        </div>
+            </button>
+        </div>
         <div class="project-item">
             <button class="openModalBtn" data-target="pegasus">
                 <img src="./img/peg_render.png" alt="Pegasus">
@@ -63,7 +76,7 @@
             </button>
         </div>
         <div class="project-item">
-            <button class="openModalBtn" data-target="sweeper">
+            <button class="openModalBtn" data-target="sweeper"> <!-- data targets ID-->
                 <img src="./img/sweeper_render.png">
                 <p class="project-title">Sweeping Robot</p>
                 <div class="tags">
@@ -228,11 +241,47 @@
                     <img src="./img/sweeper_cover_on.jpg" alt="">
         </div>
     </div>
-    <div class="modal" id="modal5">
+    <div class="modal" id="eclipse"> <!-- style: "display: flex" to show perma-->
         <div class="modal-overlay"></div> 
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
-            <p>Content for the second modal</p>
+            <h2>Eclipse Fixed Wing Plane</h2>
+            <p>Eclipse is a RC plane designed by WARG to teach members about fixed wing aircraft characteristics and design.
+               As a mechanical lead, I was responsible for driving the empennage (tail) design, machining, and CFD simulations 
+               to guide control surface dimensions and servo selection. 
+            </p>
+            <h4>Empennage</h4>
+            <img src="./img/eclipse_empennage.png" alt="">
+            <img src="./img/empennage_made.jpg" alt="">
+            <img src="./img/empennage_mount.png" alt="">
+            <ul>
+                <li>Designed a light-weight empennage assembly in SolidWorks constructed out of carbon fiber rod, aluminum sheet, balsa sheet, heat shrink wrap, and 3D printed control surfaces</li>
+                <li>Toleranced rib design for laser cutting balsa wood, and 3D printing control surfaces </li>
+                <li>Simplified mounting mechanism, only requiring 2x M3 bolts to mount on the tail boom</li>
+                <li>Final weight 332g</li>
+            </ul>
+            <h4>Machining</h4>
+            <img src="./img/eclipse_spar.jpg" alt="">
+            <ul>
+                <li>Machined wing spars on a mill, added weight-saving slotouts on top and bottom faces</li>
+                <li>Trained team members on mill operation and interpreting mechanical drawings </li>
+            </ul>
+            <h4>CFD and Analyses</h4>
+            <img src="./img/eclipse_lift_drag_chart.png" alt="">
+            <img src="./img/ansys_wing_sim.png" alt="">
+            <ul>
+                <li>Characterized NACA 4412 airfoil through low and high fidelity CFD simulations, XFLR5 and Ansys, to determine 
+                    wing span and mean chord, and cruising speed (25 m/s)
+                </li>
+                <li>Created an Excel calculator to determine stall speeds, current draw, expected range, and lift parametrically through 
+                    speed, airfoil, and other parameters inputs
+                </li>
+                <li>
+                    Identified ideal placement for pitot tube on the wing to measure airspeed with minimum disturbance from the stagnation point,
+                    boundary layer, and accelerated flow region
+                </li>
+
+            </ul>
         </div>
     </div>
 </section>

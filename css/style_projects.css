@@ -150,7 +150,7 @@ body {
 }
 
 .modal-content img{
-    width: 50%;
+    width: 40%;
     margin: 10px;
     align-self: center;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .modal-content ul{
-    margin: 0 0;
+    margin-top: 10px;
 }
 
 .modal-content p{
