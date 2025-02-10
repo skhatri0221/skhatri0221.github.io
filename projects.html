@@ -26,7 +26,19 @@
     <section class="projects-container">
     <!-- Projects container -->
     <div class="projects-grid">
-
+        <div class="project-item">
+            <button class="openModalBtn" data-target=""> <!-- data targets ID-->
+                <img src="./img/gripper_main_render.png">
+                <p class="project-title">Adaptive Gripper</p>
+                <div class="tags">
+                    <span class="tag">CAD</span>
+                    <span class="tag">FEA</span>
+                    <span class="tag">Machining</span>
+                    <span class="tag">3D printing</span>
+                    <span class="tag">WIP</span>
+                        </div>
+            </button>
+        </div>
         <div class="project-item">
             <button class="openModalBtn" data-target="eclipse"> <!-- data targets ID-->
                 <img src="./img/eclipse_render.png">
@@ -63,7 +75,6 @@
                 </div>
             </button>
         </div>
-        <!-- Add more project items as needed -->
         <div class="project-item">
             <button class="openModalBtn" data-target="server-tray">
                 <img src="./img/server-tray-render.png">
@@ -86,8 +97,6 @@
                         </div>
             </button>
         </div>
-     
-
     </div>
     
     <!-- Modals -->
@@ -130,7 +139,6 @@
                 <img src="./img/tube_jig.jpg" alt="">
         </div>
     </div>
-    
     <div class="modal" id="articus">
         <div class="modal-overlay"></div> 
         <div class="modal-content">
@@ -141,7 +149,7 @@
                communicate design ideas with more clarity and ease. This solution was cheaper than using a printer which requires purchasing
                and replacing cartridges. Instead, with this robot anyone can use any writing tool like pen and pencil to sketch images.  
             </p>
-            <img src="./img/articus-group.jpg" alt="The team!">
+            <img src="./img/Articus_Printing.gif" alt="Robot in action!">
             <p>Proper engineering process was used to define the scope of the project, brainstorm ideas, and collectively decide the most 
                effective design approach. The need statement for this project was "a need exists to draw an image by moving a drawing instrument
                in the x, y, and z-axes while keeping production cost under $100 CAD." Throughout the process, the group performed and documented 
@@ -166,8 +174,8 @@
                the Robot C software for the user interface in the EV3 brick which can be found here: <a href="https://github.com/Miekale/ArticusMaximus">github.com/Miekale/ArticusMaximus</a>.
                Also check out the gif of the robot working, and a sketch of <a href="https://www.linkedin.com/in/mohammed-nassar-phd-p-l-eng-views-posted-are-my-own-5b7682223/" style="text-decoration: none;">Professor Nassar!</a>
             </p>
-            <img src="./img/Articus_Printing.gif" alt="">
             <img src="./img/nassar.png" alt="">
+            <img src="./img/articus-group.jpg" alt="">
         </div>
     </div>
     <div class="modal" id="server-tray">
@@ -282,6 +290,13 @@
                 </li>
 
             </ul>
+        </div>
+    </div>
+    <div class="modal" id="gripper"> <!-- style: "display: flex" to show perma-->
+        <div class="modal-overlay"></div> 
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+
         </div>
     </div>
 </section>
