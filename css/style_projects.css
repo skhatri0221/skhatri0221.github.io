@@ -22,6 +22,8 @@ body {
     justify-content: center;  /* Center content horizontally */
     height: 100vh;            /* Make sure body takes full viewport height */
     background-image: url("../img/projects_background.jpg");
+    font-family: Arial, sans-serif;
+
 }
 
 .projects-container{

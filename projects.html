@@ -27,14 +27,11 @@
     <!-- Projects container -->
     <div class="projects-grid">
         <div class="project-item">
-            <button class="openModalBtn" data-target=""> <!-- data targets ID-->
-                <img src="./img/gripper_main_render.png">
+            <button class="openModalBtn" data-target="gripper"> <!-- data targets ID-->
+                <img src="./img/gripper_assem.png">
                 <p class="project-title">Adaptive Gripper</p>
                 <div class="tags">
                     <span class="tag">CAD</span>
-                    <span class="tag">FEA</span>
-                    <span class="tag">Machining</span>
-                    <span class="tag">3D printing</span>
                     <span class="tag">WIP</span>
                         </div>
             </button>
@@ -137,6 +134,13 @@
                    so the bolts do not come off loose. 
                 </p>
                 <img src="./img/tube_jig.jpg" alt="">
+                <p>For Pegasus, carbon fiber manufacturing was done through wet layups due to a simpler setup process and simplicity of the parts.
+                   I worked with the mechanical lead to select carbon fiber and the appropriate epoxy resin, and led manufacturing sessions. This involved 
+                   calculating carbon fiber to epoxy-resin ratio, and demonstrating proper laminating techniques and teaching members. Below is a part 
+                   (designed by another team member) which I co-lead a manufacturing session for. The part is cut into 4 pieces to make battery covers for 
+                   the drone frame.  
+                </p>
+                <img src="./img/battery_cover.jpg">
         </div>
     </div>
     <div class="modal" id="articus">
@@ -296,6 +300,26 @@
         <div class="modal-overlay"></div> 
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
+            <h2>Adaptive Gripper</h2>
+            <p>The goal of this project was to design a robot gripper with high payload capacity of around ~2 kg,
+                while making the fingers dexterous. 
+            </p>
+            <h4>Finger design</h4>
+            <ul>
+                <li>Implemented a 4-bar linkage mechanism to control the grip position of the fingers</li>
+                <li>Each finger is a modular unit that can be mounted to the main gripper frame</li>
+                <li>Performed static load calculations on finger linage and joints to verify 2.5 kg payload capacity</li>
+            </ul>
+            <img src="./img/gripper_finger.png" alt="">
+            <h4>Assembly</h4>
+            <ul>
+                <li>3x fingers mount to the main block, and the top 2 fingers can perform abduction & adduction motion</li>
+                <li>Aluminum (2mm thick) sheet is used as the palm to minimize weight while maintaining strength</li>
+                <li>Side covers use a U-shaped snap fit for easy attachment, which covers electronics internal servos</li>
+                <li>Aluminum piece is used to attach the gripper on a shaft using a set screw (refer to section view)</li>
+            </ul>
+            <img src="./img/gripper_assem.png" alt="">
+            <img src="./img/gripper_section_view.png" alt="">
 
         </div>
     </div>
